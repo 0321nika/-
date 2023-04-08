@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  .background {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(2,0,.6,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  }  
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    z-index: 1;
+}
+.buttons a{
+    background-color: #4860c1;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    border: 2px solid #4860c1;
+    border-radius: 7px;
+    cursor: pointer;
+    transition-duration: 0.3s;;
+}
+.buttons a:hover{
+    background-color: white;
+    color: #4860c1;
+    border: 2px solid #4860c1;
+}
+.box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+@media (max-width: 800px){
+    .buttons{
+        display: grid;
+    }
+}
+
+
+/* -------------search styles------------------ */
+.container{
+    width: 1152px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.container h1{
+    text-align: center;
+}
+.nav{
+    background: #553c9a;
+    color: #fff;
+    padding: 10px 0;
+}
+.input h2{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.form_wrap{
+    display: flex;
+    justify-content: center;
+}
+.input_wrap{
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    margin-top: 30px;
+}
+#input{
+    width: 300px;
+    padding: 10px;
+}
+#search{
+    padding: 10px;
+    background-color: #553c9a;
+    color: #fff;
+    cursor: pointer;
+}
+.data{
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+}
+.loading{
+    display: none;
+}
+input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    display: inline-block;
+    padding: 10px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="radio"]:checked + label {
+    background-color: #333;
+    color: #fff;
+  }
+  form{
+    display: flex;
+    justify-content: center;
+    margin: 40px 20px;
+  }
+  #dictionary{
+    margin-top:50px ;
+    background-color: #4860c1;
+    list-style: none;
+    padding: 50px 30px;
+    border-radius: 20px;
+    color: white;
+    font-size: 30px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
+  }
+  .arrow{
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  
